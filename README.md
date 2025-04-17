@@ -28,7 +28,7 @@ Following commands create and activate a virtual environment and run the project
     curl -LsSf https://astral.sh/uv/install.sh | sh
     git clone https://github.com/bgarcevic/danish-democracy-data.git
     cd danish-democracy-data
-    uv run python extract/danish_parliament_data_retriever.py
+    uv run python extract/danish_parliament_pipeline.py 
     cd dbt
     uv run dbt deps
     uv run dbt build
@@ -40,7 +40,7 @@ Following commands create and activate a virtual environment and run the project
     powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
     git clone https://github.com/bgarcevic/danish-democracy-data.git
     cd danish-democracy-data
-    uv run python extract\danish_parliament_data_retriever.py
+    uv run python extract\danish_parliament_pipeline.py 
     cd dbt
     uv run dbt deps
     uv run dbt build
@@ -52,7 +52,7 @@ Following commands create and activate a virtual environment and run the project
     powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
     git clone https://github.com/bgarcevic/danish-democracy-data.git
     cd danish-democracy-data
-    uv run python extract\danish_parliament_data_retriever.py
+    uv run python extract\danish_parliament_pipeline.py 
     cd dbt
     dbt deps
     dbt seed
